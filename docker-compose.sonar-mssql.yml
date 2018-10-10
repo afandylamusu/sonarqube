@@ -6,7 +6,7 @@ services:
     ports:
       - "80:9000"
     environment:
-      - SONARQUBE_JDBC_URL=jdbc:sqlserver://${SONARQUBE_MSSQL_SERVER};database=${SONARQUBE_MSSQL_DB};user=${SONARQUBE_MSSQL_USER};password=${SONARQUBE_MSSQL_PWD};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
-      - SONARQUBE_JDBC_USERNAME=${SONARQUBE_MSSQL_USER}
-      - SONARQUBE_JDBC_PASSWORD=${SONARQUBE_MSSQL_PWD}
+      - SONARQUBE_JDBC_URL=${SONARQUBE_JDBC_URL}
+      - SONARQUBE_JDBC_USERNAME=${SONARQUBE_JDBC_USERNAME}
+      - SONARQUBE_JDBC_PASSWORD=${SONARQUBE_JDBC_PASSWORD}
     
