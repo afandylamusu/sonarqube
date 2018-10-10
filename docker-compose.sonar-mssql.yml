@@ -2,11 +2,10 @@ version: "3"
 
 services:
   web:
-    image: sonarqube:7.1-alpine
+    image: sonarqube:7.1
     ports:
-      - "80:9000"
+      - "8081:9000"
     environment:
       - SONARQUBE_JDBC_URL=${SONARQUBE_JDBC_URL}
       - SONARQUBE_JDBC_USERNAME=${SONARQUBE_JDBC_USERNAME}
       - SONARQUBE_JDBC_PASSWORD=${SONARQUBE_JDBC_PASSWORD}
-    
