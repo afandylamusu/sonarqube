@@ -14,5 +14,5 @@ services:
       - sonar_exts:/opt/sonarqube/extensions
 
 volumes:
-  - sonar_data:
-  - sonar_exts:
+  sonar_data:
+  sonar_exts:
