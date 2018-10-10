@@ -10,5 +10,9 @@ services:
       - SONARQUBE_JDBC_USERNAME=${SONARQUBE_JDBC_USERNAME}
       - SONARQUBE_JDBC_PASSWORD=${SONARQUBE_JDBC_PASSWORD}
     volumes:
-      - ./sonar-data=/opt/sonarqube/data
-      - ./sonar-exts=/opt/sonarqube/extensions
+      - sonar_data: /opt/sonarqube/data
+      - sonar_exts: /opt/sonarqube/extensions
+
+volumes:
+  - sonar_data:
+  - sonar_exts:
